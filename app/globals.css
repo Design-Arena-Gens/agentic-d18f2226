@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --panel: theme(colors.panel);
+  --border: theme(colors.border);
+  --text: theme(colors.text);
+  --muted: theme(colors.muted);
+}
+
+* { box-sizing: border-box; }
+
+body { 
+  min-height: 100vh;
+}
+
+.button {
+  @apply px-3 py-2 rounded-md bg-accent text-black hover:opacity-90 transition;
+}
+
+.input {
+  @apply bg-panel border border-border rounded px-3 py-2 text-text placeholder:opacity-50;
+}
+
+.card {
+  @apply bg-panel border border-border rounded-lg;
+}
